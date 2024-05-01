@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "7a8015fb-fce9-440b-aa13-34263052dafe",
+      "name": "Pedro",
+      "email": "pedro@gmail.com"
+    },
+    {
+      "id": "7c7cebd1-54f4-4ca0-8c07-7137aac07aa5",
+      "name": "Evandro",
+      "email": "evandro@gmail.com"
+    },
+    {
+      "id": "4728c01c-a548-47c9-8fc9-c25b2fc9143b",
+      "name": "Evandro",
+      "email": "evandro@gmail.com"
+    }
+  ]
+}

@@ -23,3 +23,20 @@ hexadecimal
 encode
 decode
 char
+
+
+There is 3 ways to send data to API:
+* Query Parameters => URL Stateful, it is used to filter, for pagination. NOTE: you cannot put in sensible data.
+  e.g: https://localhost:3333/users?userId=1
+  url: https://localhost:3333
+  key: userId
+  valueL 1
+
+* Route Parameters => It is used to identify resources.  NOTE: you cannot put in sensible data.
+  e.g: https://localhost:3333/users/1
+  url: https://localhost:3333
+  route: /users/
+  value: 1
+
+* Request Body => It used to send data by body.
+mudar
