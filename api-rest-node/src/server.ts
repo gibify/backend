@@ -1,9 +1,11 @@
 import fastify from 'fastify';
+import { db } from './database';
 
 const app = fastify();
 
-app.get("/", () => {
-  return { hello: "world" };
+app.get("/", async () => {
+  const all = await db("sqlite_schema").select("*")
+  return all;
 });
 
 
