@@ -1,14 +1,14 @@
 import fastify from 'fastify';
-import { db } from './database';
+import { env } from './env';
+import { transactionsRoutes } from './routes/transactions';
 
 const app = fastify();
 
-app.get("/", async () => {
-  const all = await db("sqlite_schema").select("*")
-  return all;
-});
+app.register(transactionsRoutes, {
+  prefix: "/transactions",
+})
 
 
-app.listen({ port: 3000,}).then(() => {
-  console.log("Server is running on port 3000");
+app.listen({ port: env.PORT,}).then(() => {
+  console.log(`Server is running on port ${env.PORT}`);
 })
